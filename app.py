@@ -19,3 +19,22 @@ if answer == "left":
             print("Not a valid option. You lose.")
     else:
         print("Not a valid option. You lose.")
+
+elif answer == "right":
+    answer = input(
+        "You come to village and stumble upon a tavern. Do you decide to come inside or leave (inside / leave)? ")
+    if answer == "inside":
+        answer = input("You go in and meet your long lost friend. He offers to go on an adventure with you. Are you going to accept the offer (yes / no)? ")
+        if answer == "yes":
+            print("The friends gives you gold and a new weapon. You win!")
+        elif answer == "no":
+            print("The friend is disappointed and bids you farewell. You lose.")
+        else:
+            print("Not a valid option. You lose.")
+    elif answer == "leave":
+        answer = input(
+            "You get caught by guards and thrown out of the village. You lose.")
+    else:
+        print("Not a valid option. You lose.")
+
+    print("Thank you for playing", name)
